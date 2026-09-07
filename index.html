@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>示例页面</title>
+    <title>修改后的网页</title>
     <style>
         * {
             margin: 0;
@@ -11,36 +11,49 @@
             box-sizing: border-box;
         }
         body {
-            background-color: #f5f7fa;
-            font-family: "Microsoft Yahei", sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            font-family: system-ui, sans-serif;
             display: flex;
-            flex-direction: column;
             align-items: center;
             justify-content: center;
-            min-height: 100vh;
         }
-        .card {
-            background: #ffffff;
-            padding: 40px 60px;
-            border-radius: 12px;
-            box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+        .container {
+            background: #fff;
+            padding: 50px 70px;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
             text-align: center;
         }
         h1 {
-            color: #2c3e50;
-            margin-bottom: 16px;
-            font-size: 28px;
+            color: #222;
+            margin-bottom: 20px;
         }
-        p {
-            color: #666;
-            font-size: 16px;
+        .tip {
+            color:#555;
+            font-size:17px;
+            margin-bottom:24px;
+        }
+        button {
+            padding:12px 28px;
+            border:none;
+            background:#667eea;
+            color:#fff;
+            border-radius:8px;
+            font-size:16px;
+            cursor:pointer;
+            transition:0.3s;
+        }
+        button:hover {
+            background:#5566d4;
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <h1>Hello World</h1>
-        <p>这是一个标准的 index.html 示例页面</p>
+    <div class="container">
+        <h1>欢迎访问网页</h1>
+        <p class="tip">这是修改完成的 index.html 文件</p>
+        <button onclick="alert('点击按钮触发弹窗！')">点击我</button>
     </div>
 </body>
 </html>
